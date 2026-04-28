@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build game (Catch the Cubes)",
+            "type": "shell",
+            "command": "${workspaceFolder}\\build.bat",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Run game (Catch the Cubes)",
+            "type": "shell",
+            "command": "${workspaceFolder}\\game.exe",
+            "dependsOn": "Build game (Catch the Cubes)",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build snake (game2)",
+            "type": "shell",
+            "command": "${workspaceFolder}\\build2.bat",
+            "group": "build",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Run snake (game2)",
+            "type": "shell",
+            "command": "${workspaceFolder}\\snake.exe",
+            "dependsOn": "Build snake (game2)",
+            "problemMatcher": []
+        }
+    ]
+}

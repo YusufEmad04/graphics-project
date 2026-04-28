@@ -1,0 +1,25 @@
+# Build outputs
+build/
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# freeglut downloaded library (too large, user should download via build process)
+lib/freeglut/
+lib/freeglut.zip
+lib/fg.tar.gz
+
+# Snake game (separate project, different team member)
+game2.cpp
+build2.bat
+snake-game/
+snake-game.zip
+README_snake.md
+snake.exe
+
+# VS Code (optional, keeping settings and tasks)
+# .vscode/
+
+# Temp
+*.tmp
